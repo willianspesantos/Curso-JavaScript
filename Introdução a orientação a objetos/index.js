@@ -1,16 +1,28 @@
-//Entendendo o problema do Cliente
+//Entendendo o problema do Cliente.
 
-const cliente1 = "Willians";
-const cliente1Cpf = 11122233389;
-const cliente1Agencia = 1001;
-const cliente1Saldo = 0;
+//A classe é um molde, tudo o que eu quero ter.
+//o cliente é o Objeto.
+class cliente{
+    //tudo dentro da classe é conhecido como atributos
+    nome; 
+    cpf;
+    agencia;
+    saldo;
+} 
 
-const cliente2 = "Ana";
-const cliente2Cpf = 88822233389;
-const cliente2Agencia = 1001;
-const cliente2Saldo = 0;
+const cliente1 = new cliente();
+const cliente2 = new cliente();
+// new cliente é uma instacia da minha classe.
 
-const cliente3 = "Ana";
-const cliente3Cpf = 77722233389;
-const cliente3Agencia = 1001;
-const cliente3Saldo = 0;
+cliente1.nome = "Willians";
+cliente1.cpf = 11122233389;
+cliente1.agencia = 1001;
+cliente1.saldo = 0;
+
+cliente2.nome = "Ana";
+cliente2.cpf = 88822233389;
+cliente2.agencia = 1001;
+cliente2.saldo = 0;
+
+console.log(cliente1);
+console.log(cliente2);
