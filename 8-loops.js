@@ -7,17 +7,20 @@ console.log(listaDeDestinos);
 
 const idadeComprador = 30;
 const estarAcompanhado = true;
-const destinoEscolhido = "São Paulo";
+const destinoEscolhido = "Salvador";
 let destinoExiste = false;
-let contador = 0;
 
-while (contador < 3) {
+for (let contador = 0; contador < 3; contador++) {
     if (destinoEscolhido == listaDeDestinos[contador]) {
         destinoExiste = true;
-        break; // força uma saida do laço de repetição
     }
-    contador += 1;
+}
+console.log("\n Destino existe: ", destinoExiste);
+
+if(destinoExiste == true && idadeComprador > 18){
+    console.log("\n Boa viagem!!!");
+}else{
+    console.log("\n Desculpe, tivemos um erro.");
 }
 
-console.log("\n Destino existe: ", destinoExiste);
 
