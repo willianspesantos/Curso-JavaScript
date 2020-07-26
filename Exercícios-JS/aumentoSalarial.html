@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Aumento salarial</title>
+</head>
+<body>
+    
+    <h1>Aumento salarial</h1>
+
+    <script>
+    //Programa que calcula o reajuste salarial do empregado
+
+    var nome = prompt("\n Nome do funcionário: ");
+
+    var salario = prompt("\n Seu sálario atual: ");
+
+    var reajuste = prompt("\n Reajuste [%]: ");
+
+    var salarioReajustado = (salario * reajuste / 100) + parseInt(salario);
+    
+    document.write(`\n O funcionário ${nome} tinha o sálario de R$ ${salario} e com o reajuste de ${reajuste} porcento passou a ganhar R$ ${salarioReajustado}`);
+
+    </script>
+</body>
+</html>
+
+
+
