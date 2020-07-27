@@ -51,7 +51,7 @@ Criar um sistema para um bitbank, um sistema de conta corrente, onde será possi
 
 1. Protegendo atributos sensíveis
 
-1.Construtores
+1. Construtores
 
 1. Encapsulamento
 
