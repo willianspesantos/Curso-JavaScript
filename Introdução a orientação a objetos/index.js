@@ -1,28 +1,37 @@
-//Entendendo o problema do Cliente.
+//Separando as estruturas de acordo com o problema.
 
-//A classe é um molde, tudo o que eu quero ter.
-//o cliente é o Objeto.
 class cliente{
-    //tudo dentro da classe é conhecido como atributos
     nome; 
     cpf;
+}
+
+class contaCorrente{
     agencia;
     saldo;
-} 
+    //criando um novo comportamento (função) na classe do sistema.
+    sacar(valor){
+        //Condição para nao deixar a conta do cliente no negativo.
+        if (this.saldo > valor) {
+           this.saldo -= valor;
+           //this. serve para indicar qual a conta corrente esta solicitando essa operação. 
+           console.log(`\n Valor sacado com sucesso, seu saldo é de R$ ${this.saldo}`);
+        }else{
+           console.log(`\n Valor indisponivel, saldo atual R$ ${this.saldo}`);
+       }
+    }
+}
 
 const cliente1 = new cliente();
 const cliente2 = new cliente();
-// new cliente é uma instacia da minha classe.
 
 cliente1.nome = "Willians";
 cliente1.cpf = 11122233389;
-cliente1.agencia = 1001;
-cliente1.saldo = 0;
-
-cliente2.nome = "Ana";
-cliente2.cpf = 88822233389;
-cliente2.agencia = 1001;
-cliente2.saldo = 0;
-
 console.log(cliente1);
-console.log(cliente2);
+
+const contaCorrenteWillians = new contaCorrente();
+contaCorrenteWillians.saldo = 0;
+contaCorrenteWillians.agencia = 1001;
+console.log(contaCorrenteWillians.saldo);
+contaCorrenteWillians.saldo = 100;
+console.log(contaCorrenteWillians.saldo);
+contaCorrenteWillians.sacar(150);
