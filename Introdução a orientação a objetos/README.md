@@ -45,16 +45,16 @@ Criar um sistema para um bitbank, um sistema de conta corrente, onde será possi
 
 1. Aprofundando nos conceitos de referências a um espaço de memória
 
-Get e Set
+1. Get e Set
 
-Melhor encapsulamento da classe
+1. Melhor encapsulamento da classe
 
-Protegendo atributos sensíveis
+1. Protegendo atributos sensíveis
 
-Construtores
+1. Construtores
 
-encapsulamento
+1. Encapsulamento
 
-atributos "readonly"
+1. Atributos "readonly"
 
-Atributos estáticos
+1. Atributos estáticos
