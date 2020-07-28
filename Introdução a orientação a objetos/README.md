@@ -5,7 +5,7 @@
  ## Objetivo do Curso
 
 
-Criar um sistema para um bitbank, um sistema de conta corrente, onde será possivel fazer cadastros de clientes para conta e conseguir manipular ali o saldo de todo mundo, inclusive fazer as operações do banco.
+Criar um sistema para um bytebank, um sistema de conta corrente, onde será possivel fazer cadastros de clientes para conta e conseguir manipular ali o saldo de todo mundo, inclusive fazer as operações do banco.
  
  
  ### Conteúdo
